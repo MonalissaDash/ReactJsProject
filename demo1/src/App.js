@@ -16,15 +16,27 @@ import ChildComponent from './Components/ChildComponent';
 import UserGreeting from './Components/UserGreeting';
 import NameList from './Components/NameList';
 import ComponentA from './Components/ComponentA';
+import Stylesheet from './Components/Stylesheet';
+import Inline from './Components/Inline'
+import './appStyles.css';
+import styles from './appStyles.module.css'
+import Form from './Components/Form';
+import LifeCycleA from './Components/LifeCycleA';
 function App() {
   return (
     <div className="App">
+      <LifeCycleA/>
+      {/* <Form/> */}
+      {/* <Stylesheet primary={true}/>
+      <Inline/>
+      <h1 className='error'>Error</h1>
+      <h1 className={styles.success}>Success</h1> */}
       {/* <FunctionClick/>
       <ClassClick/> */}
       {/* <ParentComponent/> */}
       {/* <UserGreeting/> */}
       {/* <NameList/> */}
-      <ComponentA/>
+      {/* <ComponentA/> */}
       {/* <EventBind/> */}
       {/* <Greet name='one' heroname='SpiderMan' /> {/* passing the properties to greet by creating a object in functional component*/} 
       {/* <Greet name='two' heroname='SuperMan'/>
