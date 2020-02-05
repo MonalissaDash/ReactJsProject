@@ -4,9 +4,7 @@ import React, { Component } from 'react'
      constructor(props) {
          super(props)
      
-         this.state = {
-              name:'Monalissa'
-         }
+     
          console.log("LifeCycleB  constructor ")
      }
      static  getDerivedStateFromProps(props, state) {
@@ -16,13 +14,25 @@ import React, { Component } from 'react'
         componentDidMount(){
         console.log("LifeCycleB  componentDidMount")
      }
-     
+
+     shouldComponentUpdate(nextProps,nextState){
+        console.log( "LifeCycleB shouldComponentUpdate method" );
+        return true;
+    }
     render() {
         
             console.log("LifeCycleB render")
-            return <div>LifeCycleB </div>
+            return <div>{this.props.Name} </div>
             
         
+    }
+    getSnapshotBeforeUpdate(prevProps,prevState){
+        console.log("LifeCycleB getSnapshotBeforeUpdate ");
+        return null;
+    
+    }
+    componentDidUpdate(){
+        console.log("LifeCycleB componentDidUpdate ");
     }
 }
 

@@ -22,10 +22,26 @@ import './appStyles.css';
 import styles from './appStyles.module.css'
 import Form from './Components/Form';
 import LifeCycleA from './Components/LifeCycleA';
+import FragmentDemo from './Components/FragmentDemo';
+import Tables from './Components/Tables';
+import PureComp from './Components/PureComp';
+import ParentComp from './Components/ParentComp';
+import RefDemo from './Components/RefDemo';
+import FocusInput from './Components/FocusInput';
+import FRParentInput from './Components/FRParentInput'
+import PortalDemo from './Components/PortalDemo';
+
 function App() {
   return (
     <div className="App">
-      <LifeCycleA/>
+      <PortalDemo/>
+      {/* <FRParentInput/> */}
+      {/* <RefDemo/> */}
+      {/* <ParentComp/> */}
+      {/* <PureComp/> */}
+      {/* <Tables/> */}
+      {/* <FragmentDemo/> */}
+      {/* <LifeCycleA/> */}
       {/* <Form/> */}
       {/* <Stylesheet primary={true}/>
       <Inline/>
